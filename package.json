@@ -1,0 +1,30 @@
+{
+  "name": "harrypotter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "rimraf dist && parcel client/index.html",
+    "build": "rimraf dist && netlify-lambda install && parcel build client/index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/prajwalbati/harrypotter.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/prajwalbati/harrypotter/issues"
+  },
+  "homepage": "https://github.com/prajwalbati/harrypotter#readme",
+  "dependencies": {
+    "@okta/okta-signin-widget": "^3.9.2",
+    "axios": "^0.19.2",
+    "netlify-lambda": "^1.6.3",
+    "parcel": "^1.12.4"
+  },
+  "devDependencies": {
+    "rimraf": "^3.0.2"
+  }
+}
